@@ -135,3 +135,5 @@ Advanced register allocation techniques enhance performance:
 - **Graph Coloring Allocation**: Uses the Welsh & Powell algorithm for precise register optimization ([graph.pl](graph.pl), 82 lines; [graphRegAlloc.pl](graphRegAlloc.pl), 27 lines).
 
 **Grand total**: 285 lines of pure Prolog ingenuity.
+
+Licensed under MIT—feel free to use, modify, or laugh at it!
