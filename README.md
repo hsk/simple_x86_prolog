@@ -51,7 +51,7 @@ Intermediate representations include:
 Ensure you have the prerequisites:
 
 ```bash
-$ apt install swi-prolog gcc
+apt install swi-prolog gcc
 ```
 
 ## Usage
@@ -78,7 +78,6 @@ To run the test suite:
 $ make test
 ```
 
-
 ## Example Source Program
 
 Here’s a sample [src.mc](src.mc) showcasing the language’s capabilities:
@@ -87,9 +86,9 @@ Here’s a sample [src.mc](src.mc) showcasing the language’s capabilities:
 % src.mc
 main()=[
     if(0,[
-    a=0
+        a=0
     ],[
-    a=50000+5000-1000
+        a=50000+5000-1000
     ]),
     printInt(a+add(300,20,1)),
     printInt(sum(10)),
@@ -112,7 +111,7 @@ add2(a,b)=[
 For minimalists, [all.pl](all.pl) offers a 128-line, all-in-one memory allocation compiler:
 
 ```bash
-$ swipl all.pl src.mc & gcc -static a.s lib/lib.c & ./a.out
+$ swipl all.pl src.mc && gcc -static a.s lib/lib.c && ./a.out
 54321
 55
 ```
